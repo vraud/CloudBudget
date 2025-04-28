@@ -152,7 +152,7 @@ body {
     justify-content: space-between;
 }
 .overview__flex-item {
-    width: 350px;
+    max-width: 350px;
     position: relative;
 }
 .overview__img {
@@ -310,6 +310,7 @@ input {
     margin-bottom: 222px;
 }
 .footer__address {
+    max-width: 1440px;
     background-color: #fafafa;
 }
 .footer__nav {
@@ -330,4 +331,157 @@ input {
 }
 .footer__nav li:nth-child(4) {
     margin-bottom: 45px;
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .overview__flex {
+        justify-content: space-evenly;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .overview__flex-item img{
+        width: 300px;
+    }
+    .overview__text {
+        width: 223px;
+        height: 175px;
+    }
+    .contact__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__h2 {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .header__logo {
+        padding-top: 13px;
+    }
+    .header__nav-options li {
+        margin-right: 10px;
+    }
+    .header__nav-options li a {
+        font-size: 12px;
+    }
+    .text-h2 {
+        font-size: 20px;
+    }
+    .video__text-p {
+        font-size: 12px;
+    }
+    .video__flex {
+        display: block;
+        text-align: center;
+    }
+    .video__text {
+        margin: 0 auto;
+    }
+    .overview {
+        margin-bottom: 60px;
+    }
+    .overview__flex {
+        flex-direction: column;
+        gap: 120px;
+        align-items: center;
+    }
+    .features {
+        padding-top: 600px;
+    }
+    .app_download__flex {
+        padding-left: 5px;
+    }
+    .app_download__text {
+        padding-right: 5px;
+    }
+    .app_download__p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header__logo {
+        padding-top: 18px;
+    }
+    .header__logo img:first-child {
+        height: 20px;
+        width: 20px;
+
+    }
+    .header__logo img:last-child {
+        width: 120px;
+        padding-top: 0;
+    }
+    .header__nav__btn {
+        width: 70px;
+        height: 30px;
+        align-self: center;
+        font-size: 12px;
+    }
+    .header__nav-options {
+        padding-left: 0;
+    }
+    .header__nav-options li {
+        margin-right: 5px;
+    }
+    .header__nav-options li a {
+        font-size: 12px;
+    }
+    .features__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .app_download__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 576px){
+    .header__logo {
+        display: block;
+    }
+    .header__nav {
+        display: block;
+        text-align: center;
+    }
+    .header__nav-options {
+        justify-content: space-around;
+    }
+    .header__nav-options li {
+        margin-right: 0;
+    }
+    .text-h1 {
+        font-size: 40px;
+    }
+    .header__text {
+        width: 200px;
+        font-size: 12px;
+    }
+    .video__text {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .video__text-p {
+        font-size: 10px;
+    }
+    .video__flex img {
+        width: 350px;
+    }
+    .app_download__flex img {
+        max-width: 300px;
+    }
+    .contact__text {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    input {
+        width: 300px;
+    }
+    form {
+        text-align: center;
+    }
 }
